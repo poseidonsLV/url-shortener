@@ -1,0 +1,62 @@
+.statistics {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+.statistics-top-text {
+  text-align: center;
+  color: hsl(0, 0%, 25%);
+}
+.statistics-desc {
+  display: flex;
+  justify-content: center;
+  color: hsl(0, 0%, 40%);
+}
+.statistics-desc p {
+  max-width: 500px;
+}
+.statistics-cards {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+.statistics-cards::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 6px;
+  top: 110px;
+  left: 20px;
+  z-index: -1;
+  background: hsl(180, 66%, 49%);
+}
+.statistics-card {
+  background: rgb(243, 243, 243);
+  box-shadow: 0px 5px 7px 0.1px rgba(218, 218, 218, 0.8);
+  padding: 20px;
+  margin: 15px;
+  transition: all 0.35s;
+  max-height: fit-content;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translateY(20px);
+}
+.statistics-card:hover {
+  transform: scale(1.02);
+  transform: scale(1.02);
+  box-shadow: 0px 5px 7px 0.1px rgb(208, 208, 208);
+}
+.statistics-card-img img {
+  background: hsl(255, 11%, 22%);
+  padding: 10px;
+  border-radius: 100%;
+}
+.statistics-card-title {
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+.statistics-card-desc {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,30 @@
+.getStarted {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.getStarted-left-side {
+  max-width: 500px;
+  width: 100%;
+}
+.getStarted-title {
+  font-size: 2rem;
+  line-height: 70px;
+  color: hsl(0, 0%, 30%);
+}
+.getStarted-desc {
+  line-height: 23px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 35%);
+}
+.getStarted-right-side img {
+  width: 95%;
+  min-width: 350px;
+  max-width: 600px;
+  transform: translateX(150px);
+}
+#button.get-started {
+  margin-top: 15px;
+}

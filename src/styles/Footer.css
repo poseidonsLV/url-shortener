@@ -1,0 +1,42 @@
+.Footer {
+  background: hsl(255, 11%, 22%);
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  padding: 50px 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.col {
+  color: white;
+}
+
+.col strong {
+  font-size: 1.3rem;
+}
+
+.col ul {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+.col ul li {
+  padding: 1px 0;
+  margin: 5px 0;
+  color: hsl(0, 0%, 80%);
+  display: block;
+  cursor: pointer;
+  transition: all 0.35s;
+}
+.col ul li:hover {
+  color: hsl(180, 66%, 49%);
+}
+.col.four ul {
+  display: flex;
+  align-items: center;
+}
+.col.four ul li {
+  margin: 10px;
+}
+.col.four ul li img:hover {
+  filter: invert(10%) sepia(54%) saturate(800%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}

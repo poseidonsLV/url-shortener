@@ -1,0 +1,105 @@
+/* SHORTENER STYLE */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap");
+.shortener-body {
+  height: 100%;
+  margin: 50px 0;
+}
+.shortener {
+  width: 100%;
+  height: fit-content;
+  background: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  padding: 40px 0px;
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shortener .submit-form {
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  margin: auto;
+  position: relative;
+}
+.submit-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  margin-right: 20px;
+  outline: none;
+  border: none;
+  transition: all 0.25s;
+}
+.submit-form input::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.submit-form input:focus {
+  transform: scale(1.03);
+}
+.submit-form input:focus::placeholder {
+  color: hsl(0, 0%, 40%);
+}
+
+#button.shortener-button {
+  padding: 12px;
+  width: 150px;
+  border-radius: 2px;
+}
+#button.shortened-button.copied {
+  background: hsl(257, 27%, 26%);
+}
+
+.form-error-message {
+  color: hsl(0, 87%, 67%);
+  position: absolute;
+  bottom: -25px;
+  font-family: "Poppins", sans-serif;
+}
+.input-err::placeholder {
+  color: hsl(0, 87%, 67%) !important;
+  font-weight: 550;
+}
+.input-err {
+  border: 1px solid hsl(0, 87%, 67%) !important;
+  box-shadow: 0px 0px 6px 0.1px hsl(0, 87%, 67%);
+}
+
+/* SHORTENED ITEMS STYLES */
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 20%);
+  cursor: pointer;
+}
+
+.urls-list-item {
+  display: flex;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(238, 238, 238, 0.9);
+  transition: all 0.25s ease-in-out;
+}
+.urls-list-item:hover {
+  transform: scale(1.03);
+  background: rgb(228, 228, 228);
+}
+.item-left-side {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+}
+.item-right-side {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.item-right-side a {
+  color: hsl(180, 66%, 49%);
+}
+#button.shortened-button {
+  cursor: pointer;
+  margin-left: 20px;
+}

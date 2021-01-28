@@ -1,0 +1,18 @@
+.Banner {
+  background: hsl(257, 27%, 26%);
+  padding: 40px 0px;
+  display: grid;
+  place-items: center;
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-title {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+#button.banner-button {
+  margin-top: 10px;
+  width: 200px;
+  padding: 12px;
+}
