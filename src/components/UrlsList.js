@@ -16,15 +16,30 @@ function UrlsList({ defaultUrl, shortenedUrl, id }) {
     }
   };
 
-  // function redirectToWebsite(url) {
-  //   window.location = url;
-  // }
+  function redirectToWebsite(url) {
+    window.location = url;
+  }
 
   return (
     <div className="urls-list">
       <div key={id} className="urls-list-item">
-        <div className="item-left-side"></div>
+        <div className="item-left-side">
+          <a
+            href={shortenedUrl}
+            onClick={() => redirectToWebsite(shortenedUrl)}
+            className="default-url"
+          >
+            {defaultUrl.substring(0, 250)}
+          </a>
+        </div>
         <div className="item-right-side">
+          <a
+            href={shortenedUrl}
+            onClick={() => redirectToWebsite(shortenedUrl)}
+            className="shortened-url"
+          >
+            {shortenedUrl}
+          </a>
           <button
             onClick={() => copyToClipBoard(shortenedUrl)}
             id="button"
