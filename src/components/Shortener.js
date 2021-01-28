@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { BitlyClient } from "bitly-react";
 import "../styles/Shortener.css";
 import UrlsList from "./UrlsList";
@@ -7,7 +7,6 @@ function Shortener() {
   const [urlToShorten, setUrlToShorten] = useState("");
   const [shortenedUrls, setShortenedUrls] = useState([]);
   const [showErrMsg, setShowErrMsg] = useState(false);
-  const [copied, setCopied] = useState(false);
 
   const bitly = new BitlyClient("5bc47c8e46f5d49107ba01cba80421448d22da09", {});
 

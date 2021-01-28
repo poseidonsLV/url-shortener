@@ -25,6 +25,7 @@ function UrlsList({ defaultUrl, shortenedUrl, id }) {
       <div key={id} className="urls-list-item">
         <div className="item-left-side">
           <a
+            href=""
             onClick={() => redirectToWebsite(shortenedUrl)}
             className="default-url"
           >
@@ -33,6 +34,7 @@ function UrlsList({ defaultUrl, shortenedUrl, id }) {
         </div>
         <div className="item-right-side">
           <a
+            href=""
             onClick={() => redirectToWebsite(shortenedUrl)}
             className="shortened-url"
           >
